@@ -1,0 +1,230 @@
+html{
+	border: outset 50px #ffffff;
+    background: linear-gradient(to bottom, #000000, rgba(100, 0, 255, 0.1));
+}
+body{
+    zoom: 0.4;
+    -moz-transform: scale(0.4);
+	width: 2000px;
+	margin-right: auto;
+	margin-left: auto;
+}
+p{
+	font-weight: bold;
+	font-size: 200px;
+	color: aliceblue;
+	text-align: center;
+	line-height: 10%;
+}
+p.bpm{
+	font-size: 300px;
+}
+.box1{
+	width: 2000px;
+	height: 1000px;
+	border: outset blue 10px;
+	margin-top: 100px;
+}
+#bpbbox{
+	font-weight: bold;
+	font-size: 200px;
+	color: aliceblue;
+}
+#bpbbox div#bpbbutton{
+	width: 300px;
+	float: right;
+	margin-right: 200px;
+	text-align: left;
+}
+#bpbbox div#haku{
+	float: left;
+	text-align: right;
+	width: 1150px;
+	margin-top: 50px; 
+}
+#bpbbox input.btn{
+	display: block;
+	float: right;
+}
+input{
+	cursor: pointer;
+	border: outset blue 10px;
+}
+#bpmstart{
+	margin-left: 300px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+input.btn{
+	background-color: red;
+	color: skyblue;
+	font-size: 100px;
+	width: 400px;
+	height: 200px;
+}
+input.box{
+	margin-top: 90px;
+	font-size: 300px;
+	width: 600px;
+	height: 300px;
+	background-color:salmon;
+	font-weight: bold;
+	color: aliceblue;
+	text-align: right;
+}
+#bpmimage{
+	display: flex;
+	height: 1040px;
+}
+#bpmimage div:first-child{
+	margin-left: 100px;
+}
+#bpmimage div.strong{
+	background-color: darkred;!important
+}
+#bpmimage div:last-child{
+	margin-right: 100px;
+}
+#bpmimage div{
+	cursor: pointer;
+	border: outset 20px #888;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	width: 2000px;
+	height: 800px;
+	background-color: darkblue;
+	margin-left: 14px;
+}
+form#timer{
+	font-weight: bold;
+	font-size: 200px;
+	color: aliceblue;
+	text-align: center;
+	height: 500px;
+}
+ul{
+	display: flex;
+	list-style: none;
+	justify-content: center;
+}
+li.plus{
+	margin-left: 5%;
+}
+li.minus{
+	margin-right: 5%;
+}
+input[type="number"]::-webkit-inner-spin-button {
+	padding: 30px;
+}
+nav#menu ul li a{
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav#menu ul li a:nth-of-type(n+2){
+    margin-left: 100px;
+}
+.snow{
+    display: block;
+    position: absolute;
+    opacity: 0;
+}
+#snow1{
+    left: 200px;
+    top: -500px;
+    animation: snow_animation 25s linear 0s infinite normal;
+}
+#snow2{
+    top: -400px;
+    left: 500px;
+    animation: snow_animation 20s linear 0s infinite normal;
+}
+#snow3{
+    top: -300px;
+    right: 400px;
+    animation: snow_animation 10s linear 0s infinite normal;
+}
+#snow4{
+    top: 0px;
+    right: 800px;
+    animation: snow_animation 37s linear 0s infinite normal;
+}
+#snow5{
+    top: 1000px;
+    right: 100px;
+    animation: snow_animation 40s linear 0s infinite normal;
+}
+#snow6{
+    top: 1500px;
+    right: 2300px;
+    animation: snow_animation 22s linear 0s infinite normal;
+}
+#snow7{
+    top: 1000px;
+    left: 800px;
+    animation: snow_animation 32s linear 0s infinite normal;
+}
+#snow8{
+    top: 0px;
+    right: 1000px;
+    animation: snow_animation 15s linear 0s infinite normal;
+}
+#snow9{
+    top: 500px;
+    right: 1500px;
+    animation: snow_animation 25s linear 0s infinite normal;
+}
+#snow10{
+    top: 40px;
+    left: 2000px;
+    animation: snow_animation 20s linear 0s infinite normal;
+}
+#snow11{
+    top: 1200px;
+    right: 800px;
+    animation: snow_animation 30s linear 0s infinite normal;
+}
+#snow12{
+    top: 100px;
+    left: 300px;
+    animation: snow_animation 35s linear 0s infinite normal;
+}
+@keyframes snow_animation{
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 0;
+        
+    }
+    30%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(360deg);
+        top: 2000px;
+        opacity: 0;
+    }
+}

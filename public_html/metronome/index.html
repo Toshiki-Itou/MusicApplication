@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <meta charset="UTF-8">
+    <title>メトロノーム</title>
+</head>
+
+<body>
+    <header>
+        <nav id="menu">
+            <ul>
+                <li>
+                    <a href="../metronome/index.html"><img src="../img/metronome_mini.png">メトロノーム</a>
+                    <a href="../drum/index.html"><img src="../img/drum_mini.png">ドラム</a>
+                    <a href="../bass/index.html"><img src="../img/bass_mini.png">ベース</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <audio id="sound_s" src="se/metronome_s.wav" preload="auto"></audio>
+    <audio id="sound_w" src="se/metronome_w.wav" preload="auto"></audio>
+    <main>
+        <img src="../img/snow0.png" class="snow" id="snow1">
+        <img src="../img/snow1.png" class="snow" id="snow2">
+        <img src="../img/snow2.png" class="snow" id="snow3">
+        <img src="../img/snow3.png" class="snow" id="snow4">
+        <img src="../img/snow0.png" class="snow" id="snow5">
+        <img src="../img/snow3.png" class="snow" id="snow6">
+        <img src="../img/snow0.png" class="snow" id="snow7">
+        <img src="../img/snow1.png" class="snow" id="snow8">
+        <img src="../img/snow2.png" class="snow" id="snow9">
+        <img src="../img/snow3.png" class="snow" id="snow10">
+        <img src="../img/snow0.png" class="snow" id="snow11">
+        <img src="../img/snow3.png" class="snow" id="snow12">
+        <div id="bpmbox" class="box1">
+            <nav id="bpmsetting">
+                <ul>
+                    <li class="minus">
+                        <input id="-10" type="button" value="-10" class="btn">
+                        <input id="-1" type="button" value="-1" class="btn">
+                    </li>
+                    <li class="plus">
+                        <input id="+1" type="button" value="+1" class="btn">
+                        <input id="+10" type="button" value="+10" class="btn">
+                    </li>
+                </ul>
+            </nav>
+            <p>BPM:</p>
+            <p class="bpm">100</p>
+        </div>
+        <div id="bpbbox" class="box1">
+            <p>Beats Per Bar:</p>
+            <div id="haku">
+                <span>4</span>拍
+            </div>
+            <div id="bpbbutton">
+                <input id="-10" type="button" value="+1" class="btn">
+                <input id="-1" type="button" value="-1" class="btn">
+            </div>
+        </div>
+        <form id="timer" class="box1">
+            <input type="number" value="0" id="min" class="box" min="0">分
+            <input type="number" value="0" id="sec" class="box" min="0">秒
+        </form>
+        <div id="bpmimage" class="box1">
+            <div class="strong"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <input id="bpmstart" type="button" value="再生" class="btn">
+    </main>
+</body>
+
+</html>

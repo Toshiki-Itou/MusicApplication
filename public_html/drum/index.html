@@ -1,0 +1,423 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <meta charset="UTF-8">
+    <title>ドラム</title>
+</head>
+
+<body>
+    <header>
+        <nav id="menu">
+            <ul>
+                <li>
+                    <a href="../metronome/index.html"><img src="../img/metronome_mini.png">メトロノーム</a>
+                    <a href="../drum/index.html"><img src="../img/drum_mini.png">ドラム</a>
+                    <a href="../bass/index.html"><img src="../img/bass_mini.png">ベース</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <input id="start" type="checkbox">
+        <label for="start"><br></label>
+        <div id="bpm">
+            <label id="bpmlabel">BPM:</label><input type="number" value="100" id="bpmnumber" min="60" max="255">
+        </div>
+        <input type="button" id="template" value="テンプレート">
+        <div class="reflection"></div>
+        <div class="sunshine"></div>
+        <div class="mainpanel">
+            <div class="container">
+                <img src="../img/sound.png" id="0">
+                <input type="checkbox"id="0-0">
+                <label for="0-0"></label>
+                <input type="checkbox"id="0-1">
+                <label for="0-1"></label>
+                <input type="checkbox"id="0-2">
+                <label for="0-2"></label>
+                <input type="checkbox"id="0-3">
+                <label for="0-3"></label>
+                <input type="checkbox"id="0-4">
+                <label for="0-4"></label>
+                <input type="checkbox"id="0-5">
+                <label for="0-5"></label>
+                <input type="checkbox"id="0-6">
+                <label for="0-6"></label>
+                <input type="checkbox"id="0-7">
+                <label for="0-7"></label>
+                <input type="checkbox"id="0-8">
+                <label for="0-8"></label>
+                <input type="checkbox"id="0-9">
+                <label for="0-9"></label>
+                <input type="checkbox"id="0-10">
+                <label for="0-10"></label>
+                <input type="checkbox"id="0-11">
+                <label for="0-11"></label>
+                <input type="checkbox"id="0-12">
+                <label for="0-12"></label>
+                <input type="checkbox"id="0-13">
+                <label for="0-13"></label>
+                <input type="checkbox"id="0-14">
+                <label for="0-14"></label>
+                <input type="checkbox"id="0-15">
+                <label for="0-15"></label>
+            </div>
+            <div class="container">
+                <img src="../img/sound.png" id="1">
+                <input type="checkbox"id="1-0">
+                <label for="1-0"></label>
+                <input type="checkbox"id="1-1">
+                <label for="1-1"></label>
+                <input type="checkbox"id="1-2">
+                <label for="1-2"></label>
+                <input type="checkbox"id="1-3">
+                <label for="1-3"></label>
+                <input type="checkbox"id="1-4">
+                <label for="1-4"></label>
+                <input type="checkbox"id="1-5">
+                <label for="1-5"></label>
+                <input type="checkbox"id="1-6">
+                <label for="1-6"></label>
+                <input type="checkbox"id="1-7">
+                <label for="1-7"></label>
+                <input type="checkbox"id="1-8">
+                <label for="1-8"></label>
+                <input type="checkbox"id="1-9">
+                <label for="1-9"></label>
+                <input type="checkbox"id="1-10">
+                <label for="1-10"></label>
+                <input type="checkbox"id="1-11">
+                <label for="1-11"></label>
+                <input type="checkbox"id="1-12">
+                <label for="1-12"></label>
+                <input type="checkbox"id="1-13">
+                <label for="1-13"></label>
+                <input type="checkbox"id="1-14">
+                <label for="1-14"></label>
+                <input type="checkbox"id="1-15">
+                <label for="1-15"></label>
+            </div>
+            <div class="container">
+                <img src="../img/sound.png" id="2">
+                <input type="checkbox"id="2-0">
+                <label for="2-0"></label>
+                <input type="checkbox"id="2-1">
+                <label for="2-1"></label>
+                <input type="checkbox"id="2-2">
+                <label for="2-2"></label>
+                <input type="checkbox"id="2-3">
+                <label for="2-3"></label>
+                <input type="checkbox"id="2-4">
+                <label for="2-4"></label>
+                <input type="checkbox"id="2-5">
+                <label for="2-5"></label>
+                <input type="checkbox"id="2-6">
+                <label for="2-6"></label>
+                <input type="checkbox"id="2-7">
+                <label for="2-7"></label>
+                <input type="checkbox"id="2-8">
+                <label for="2-8"></label>
+                <input type="checkbox"id="2-9">
+                <label for="2-9"></label>
+                <input type="checkbox"id="2-10">
+                <label for="2-10"></label>
+                <input type="checkbox"id="2-11">
+                <label for="2-11"></label>
+                <input type="checkbox"id="2-12">
+                <label for="2-12"></label>
+                <input type="checkbox"id="2-13">
+                <label for="2-13"></label>
+                <input type="checkbox"id="2-14">
+                <label for="2-14"></label>
+                <input type="checkbox"id="2-15">
+                <label for="2-15"></label>
+            </div>
+            <div class="container">
+                <img src="../img/sound.png" id="3">
+                <input type="checkbox"id="3-0">
+                <label for="3-0"></label>
+                <input type="checkbox"id="3-1">
+                <label for="3-1"></label>
+                <input type="checkbox"id="3-2">
+                <label for="3-2"></label>
+                <input type="checkbox"id="3-3">
+                <label for="3-3"></label>
+                <input type="checkbox"id="3-4">
+                <label for="3-4"></label>
+                <input type="checkbox"id="3-5">
+                <label for="3-5"></label>
+                <input type="checkbox"id="3-6">
+                <label for="3-6"></label>
+                <input type="checkbox"id="3-7">
+                <label for="3-7"></label>
+                <input type="checkbox"id="3-8">
+                <label for="3-8"></label>
+                <input type="checkbox"id="3-9">
+                <label for="3-9"></label>
+                <input type="checkbox"id="3-10">
+                <label for="3-10"></label>
+                <input type="checkbox"id="3-11">
+                <label for="3-11"></label>
+                <input type="checkbox"id="3-12">
+                <label for="3-12"></label>
+                <input type="checkbox"id="3-13">
+                <label for="3-13"></label>
+                <input type="checkbox"id="3-14">
+                <label for="3-14"></label>
+                <input type="checkbox"id="3-15">
+                <label for="3-15"></label>
+            </div>
+            <div class="container">
+                <img src="../img/sound.png" id="4">
+                <input type="checkbox"id="4-0">
+                <label for="4-0"></label>
+                <input type="checkbox"id="4-1">
+                <label for="4-1"></label>
+                <input type="checkbox"id="4-2">
+                <label for="4-2"></label>
+                <input type="checkbox"id="4-3">
+                <label for="4-3"></label>
+                <input type="checkbox"id="4-4">
+                <label for="4-4"></label>
+                <input type="checkbox"id="4-5">
+                <label for="4-5"></label>
+                <input type="checkbox"id="4-6">
+                <label for="4-6"></label>
+                <input type="checkbox"id="4-7">
+                <label for="4-7"></label>
+                <input type="checkbox"id="4-8">
+                <label for="4-8"></label>
+                <input type="checkbox"id="4-9">
+                <label for="4-9"></label>
+                <input type="checkbox"id="4-10">
+                <label for="4-10"></label>
+                <input type="checkbox"id="4-11">
+                <label for="4-11"></label>
+                <input type="checkbox"id="4-12">
+                <label for="4-12"></label>
+                <input type="checkbox"id="4-13">
+                <label for="4-13"></label>
+                <input type="checkbox"id="4-14">
+                <label for="4-14"></label>
+                <input type="checkbox"id="4-15">
+                <label for="4-15"></label>
+            </div>
+            <div class="container">
+                <img src="../img/sound.png" id="5">
+                <input type="checkbox"id="5-0">
+                <label for="5-0"></label>
+                <input type="checkbox"id="5-1">
+                <label for="5-1"></label>
+                <input type="checkbox"id="5-2">
+                <label for="5-2"></label>
+                <input type="checkbox"id="5-3">
+                <label for="5-3"></label>
+                <input type="checkbox"id="5-4">
+                <label for="5-4"></label>
+                <input type="checkbox"id="5-5">
+                <label for="5-5"></label>
+                <input type="checkbox"id="5-6">
+                <label for="5-6"></label>
+                <input type="checkbox"id="5-7">
+                <label for="5-7"></label>
+                <input type="checkbox"id="5-8">
+                <label for="5-8"></label>
+                <input type="checkbox"id="5-9">
+                <label for="5-9"></label>
+                <input type="checkbox"id="5-10">
+                <label for="5-10"></label>
+                <input type="checkbox"id="5-11">
+                <label for="5-11"></label>
+                <input type="checkbox"id="5-12">
+                <label for="5-12"></label>
+                <input type="checkbox"id="5-13">
+                <label for="5-13"></label>
+                <input type="checkbox"id="5-14">
+                <label for="5-14"></label>
+                <input type="checkbox"id="5-15">
+                <label for="5-15"></label>
+            </div>
+            <div class="container">
+                <img src="../img/sound.png" id="6">
+                <input type="checkbox"id="6-0">
+                <label for="6-0"></label>
+                <input type="checkbox"id="6-1">
+                <label for="6-1"></label>
+                <input type="checkbox"id="6-2">
+                <label for="6-2"></label>
+                <input type="checkbox"id="6-3">
+                <label for="6-3"></label>
+                <input type="checkbox"id="6-4">
+                <label for="6-4"></label>
+                <input type="checkbox"id="6-5">
+                <label for="6-5"></label>
+                <input type="checkbox"id="6-6">
+                <label for="6-6"></label>
+                <input type="checkbox"id="6-7">
+                <label for="6-7"></label>
+                <input type="checkbox"id="6-8">
+                <label for="6-8"></label>
+                <input type="checkbox"id="6-9">
+                <label for="6-9"></label>
+                <input type="checkbox"id="6-10">
+                <label for="6-10"></label>
+                <input type="checkbox"id="6-11">
+                <label for="6-11"></label>
+                <input type="checkbox"id="6-12">
+                <label for="6-12"></label>
+                <input type="checkbox"id="6-13">
+                <label for="6-13"></label>
+                <input type="checkbox"id="6-14">
+                <label for="6-14"></label>
+                <input type="checkbox"id="6-15">
+                <label for="6-15"></label>
+            </div>
+            <div class="container">
+                <img src="../img/sound.png" id="7">
+                <input type="checkbox"id="7-0">
+                <label for="7-0"></label>
+                <input type="checkbox"id="7-1">
+                <label for="7-1"></label>
+                <input type="checkbox"id="7-2">
+                <label for="7-2"></label>
+                <input type="checkbox"id="7-3">
+                <label for="7-3"></label>
+                <input type="checkbox"id="7-4">
+                <label for="7-4"></label>
+                <input type="checkbox"id="7-5">
+                <label for="7-5"></label>
+                <input type="checkbox"id="7-6">
+                <label for="7-6"></label>
+                <input type="checkbox"id="7-7">
+                <label for="7-7"></label>
+                <input type="checkbox"id="7-8">
+                <label for="7-8"></label>
+                <input type="checkbox"id="7-9">
+                <label for="7-9"></label>
+                <input type="checkbox"id="7-10">
+                <label for="7-10"></label>
+                <input type="checkbox"id="7-11">
+                <label for="7-11"></label>
+                <input type="checkbox"id="7-12">
+                <label for="7-12"></label>
+                <input type="checkbox"id="7-13">
+                <label for="7-13"></label>
+                <input type="checkbox"id="7-14">
+                <label for="7-14"></label>
+                <input type="checkbox"id="7-15">
+                <label for="7-15"></label>
+            </div>
+            <div class="container">
+                <img src="../img/sound.png" id="8">
+                <input type="checkbox"id="8-0">
+                <label for="8-0"></label>
+                <input type="checkbox"id="8-1">
+                <label for="8-1"></label>
+                <input type="checkbox"id="8-2">
+                <label for="8-2"></label>
+                <input type="checkbox"id="8-3">
+                <label for="8-3"></label>
+                <input type="checkbox"id="8-4">
+                <label for="8-4"></label>
+                <input type="checkbox"id="8-5">
+                <label for="8-5"></label>
+                <input type="checkbox"id="8-6">
+                <label for="8-6"></label>
+                <input type="checkbox"id="8-7">
+                <label for="8-7"></label>
+                <input type="checkbox"id="8-8">
+                <label for="8-8"></label>
+                <input type="checkbox"id="8-9">
+                <label for="8-9"></label>
+                <input type="checkbox"id="8-10">
+                <label for="8-10"></label>
+                <input type="checkbox"id="8-11">
+                <label for="8-11"></label>
+                <input type="checkbox"id="8-12">
+                <label for="8-12"></label>
+                <input type="checkbox"id="8-13">
+                <label for="8-13"></label>
+                <input type="checkbox"id="8-14">
+                <label for="8-14"></label>
+                <input type="checkbox"id="8-15">
+                <label for="8-15"></label>
+            </div>
+            <div class="container">
+                <img src="../img/sound.png" id="9">
+                <input type="checkbox"id="9-0">
+                <label for="9-0"></label>
+                <input type="checkbox"id="9-1">
+                <label for="9-1"></label>
+                <input type="checkbox"id="9-2">
+                <label for="9-2"></label>
+                <input type="checkbox"id="9-3">
+                <label for="9-3"></label>
+                <input type="checkbox"id="9-4">
+                <label for="9-4"></label>
+                <input type="checkbox"id="9-5">
+                <label for="9-5"></label>
+                <input type="checkbox"id="9-6">
+                <label for="9-6"></label>
+                <input type="checkbox"id="9-7">
+                <label for="9-7"></label>
+                <input type="checkbox"id="9-8">
+                <label for="9-8"></label>
+                <input type="checkbox"id="9-9">
+                <label for="9-9"></label>
+                <input type="checkbox"id="9-10">
+                <label for="9-10"></label>
+                <input type="checkbox"id="9-11">
+                <label for="9-11"></label>
+                <input type="checkbox"id="9-12">
+                <label for="9-12"></label>
+                <input type="checkbox"id="9-13">
+                <label for="9-13"></label>
+                <input type="checkbox"id="9-14">
+                <label for="9-14"></label>
+                <input type="checkbox"id="9-15">
+                <label for="9-15"></label>
+            </div>
+            <div class="container">
+                <img src="../img/sound.png" id="10">
+                <input type="checkbox"id="10-0">
+                <label for="10-0"></label>
+                <input type="checkbox"id="10-1">
+                <label for="10-1"></label>
+                <input type="checkbox"id="10-2">
+                <label for="10-2"></label>
+                <input type="checkbox"id="10-3">
+                <label for="10-3"></label>
+                <input type="checkbox"id="10-4">
+                <label for="10-4"></label>
+                <input type="checkbox"id="10-5">
+                <label for="10-5"></label>
+                <input type="checkbox"id="10-6">
+                <label for="10-6"></label>
+                <input type="checkbox"id="10-7">
+                <label for="10-7"></label>
+                <input type="checkbox"id="10-8">
+                <label for="10-8"></label>
+                <input type="checkbox"id="10-9">
+                <label for="10-9"></label>
+                <input type="checkbox"id="10-10">
+                <label for="10-10"></label>
+                <input type="checkbox"id="10-11">
+                <label for="10-11"></label>
+                <input type="checkbox"id="10-12">
+                <label for="10-12"></label>
+                <input type="checkbox"id="10-13">
+                <label for="10-13"></label>
+                <input type="checkbox"id="10-14">
+                <label for="10-14"></label>
+                <input type="checkbox"id="10-15">
+                <label for="10-15"></label>
+            </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
